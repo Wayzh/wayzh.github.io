@@ -1,4 +1,6 @@
 ---
+layout: article
+title: Scoping & Hoisting
 ---
 
 ***理解Scoping & Hoisting***
