@@ -36,11 +36,16 @@
 
         <aside id="sidebar">
         	<h3>分类</h3>
-        	<ul>
+        	<!--<ul>
         		<li><a href="{{ site.baseurl }}{{site.posts.javascript.url}}">js</a></li>
         		<li><a href="#">Java</a></li>
         		<li><a href="#">个人杂想</a></li>
-        	</ul>  	
+        	</ul>  	-->
+        	　<ul>
+			　　　　{% for post in site.posts %}
+			　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+			　　　　{% endfor %}
+			　			</ul>
         </aside>
       </div>
     </div>
