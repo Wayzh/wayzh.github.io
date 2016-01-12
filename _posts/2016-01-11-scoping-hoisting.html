@@ -3,13 +3,13 @@ layout: article
 title: Scoping & Hoisting
 ---
 
-***理解Scoping & Hoisting***
+<h4>理解Scoping & Hoisting</h>
 >js与其他一些语言如c/c++/java之类的一个很大差别，就是作用域的问题，这是一个新的点，是函数作用域，而非块作用域。
 
--------------------
+<br />
 下面我们来做个小样例：
 
-```
+<pre>
 ;(function(windows,document,undifined){
 	var a = 1;
 	function test(){
@@ -19,11 +19,11 @@ title: Scoping & Hoisting
 	}
 	test();
 })(window, document);
-```
-*测试结果输出是2，是的，这不是bug。*
+</pre>
+*测试结果输出是2，是的，这不是bug。*<br />
 这段代码关键点是在（1）处。实际上这段代码相当于（这就是函数作用域的神奇之处）
 
-```
+<pre>
 ;(function(windows,document,undifined){
 	var a = 1;
 	function test(){
@@ -34,12 +34,12 @@ title: Scoping & Hoisting
 	}
 	test();
 })(window, document);
-```
-所以，我们需要考虑，但我们需要打印出1结果的时候怎么处理？
-这里给出两种方法：
-***方法1： ***
+</pre>
+所以，我们需要考虑，但我们需要打印出1结果的时候怎么处理？<br />
+这里给出两种方法：<br />
+***方法1： ***<br />
 
-```
+<pre>
 ;(function(windows,document,undifined){
 	var a = 1;
 	function test(){
@@ -49,10 +49,9 @@ title: Scoping & Hoisting
 	}
 	test();
 })(window, document);
-```
+</pre>
 ***方法2：***
-
-```
+<pre>
 ;(function(windows,document,undifined){
 	var a = 1;
 	function test(){
@@ -65,7 +64,7 @@ title: Scoping & Hoisting
 	test();
 })(window, document);
 
-```
+</pre>
 这就是所谓的闭包了，var a=2的定义已然处于test函数作用域的下一层级，所以不会影响其作用域的变量。
 
 > 参考于<a href="http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html" target="_blank">Ben Cherry 的原文
