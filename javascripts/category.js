@@ -14,7 +14,7 @@ $(document).ready(function(){
 			for( i = 0 ; i < size ;  i++ ){
 				
 				if(data[i].category.toLowerCase() == category.toLowerCase()){
-					var child = "<small >"+ data[i].date +"*" + data[i].category +" &nbsp;&nbsp;</small> <a style='font-size:25px;font-family:  Helvetica, Arial, serif;'  href='data[i].url' >"+data[i].title+"</a>";
+					var child = "<small >"+ data[i].date +"*" + data[i].category +" &nbsp;&nbsp;</small> <a style='font-size:25px;font-family:  Helvetica, Arial, serif;'  href='"+data[i].url+"' >"+data[i].title+"</a>";
 					$("#main-content").append(child);
 					console.log(data[i]);
 				}
