@@ -9,7 +9,18 @@ $(document).ready(function(){
 		success:function(data){
 			console.log(data);
 			var posts = [];
-			for()
+			var size = data.length-1;
+			var i = 0;
+			for( i = 0 ; i < size ;  i++ ){
+				console.log(data[i]);
+				if(data[i].category == category){
+					var child = "<small >"+ data[i].date +"*" + data[i].category +" &nbsp;&nbsp;</small> <a style='font-size:25px;font-family:  Helvetica, Arial, serif;'  href='data[i].url' >"+data[i].title+"</a>";
+					$("#main-content").append(child);
+					
+				}
+					
+			}
+			
 		},
 		error:function(a){
 			console.log("false");
