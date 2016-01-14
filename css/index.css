@@ -217,19 +217,18 @@ a {
 	}
 
 }
-@media only screen and (min-width: 360px  ) {
-	/*.panel-min-cover{*/
-		/*display: none;*/
-	/*}*/
+@media only screen and (min-width: 767px  ) {
+	.panel-min-cover{
+		display: none;
+	}
 }
-@media ( max-width: 360px ) {
-
+@media ( max-width: 767px ) {
   	.avatar {
 		  text-align: center;
 		  height: 180px;
 		  overflow: hidden;
 		  position: relative;
-		  padding-top: 40px;
+		  padding-top: 20px;
 	}
 	.avatar .pic{
 		width: 100px;
