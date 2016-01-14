@@ -218,9 +218,9 @@ a {
 
 }
 @media only screen and (min-width: 360px  ) {
-	.panel-min-cover{
-		display: none;
-	}
+	/*.panel-min-cover{*/
+		/*display: none;*/
+	/*}*/
 }
 @media ( max-width: 360px ) {
 
@@ -229,7 +229,7 @@ a {
 		  height: 180px;
 		  overflow: hidden;
 		  position: relative;
-		  padding-top: 10px;
+		  padding-top: 40px;
 	}
 	.avatar .pic{
 		width: 100px;
