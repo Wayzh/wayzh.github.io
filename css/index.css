@@ -225,9 +225,6 @@ a {
 @media ( max-width: 360px ) {
 
   	.avatar {
-  		100px;
-  	}
-  	.avatar {
 		  text-align: center;
 		  height: 180px;
 		  overflow: hidden;
