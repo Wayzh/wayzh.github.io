@@ -161,7 +161,6 @@ a {
 	width: 28%;
 	height: 100%;
 	max-width: 700px;
-	min-width: 210px;
 	/*display: block;*/
 	position: fixed;
 	z-index: 1000;
