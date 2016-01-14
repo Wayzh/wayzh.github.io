@@ -243,7 +243,7 @@ a {
 		margin-top:  15%;
 
 	}
-	.blog-body h3, .blog-lists h3{
+	.blog-body a, .blog-lists a{
 		font-size: 17px;
 	}
 }
