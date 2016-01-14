@@ -224,7 +224,7 @@ a {
 }
 @media ( max-width: 360px ) {
 
-  	.avatar {
+  	/*.avatar {
   		100px;
   	}
   	.avatar {
@@ -241,7 +241,7 @@ a {
 	}
 	.avatar h3 {
 		font-size: 20px;
-	}
+	}*/
 	.panel-cover{
 		display: none;
 	}
