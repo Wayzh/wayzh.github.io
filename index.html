@@ -1,58 +1,33 @@
----
----
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <title>Wayzh.GitHub.io by Wayzh</title>
-  </head>
-
-  <body>
-    <header>
-      <div class="inner">
-        <h2>Wayzh’ Blog</h2>
-        <a href="https://github.com/Wayzh" class="button"><small>Follow me on</small> GitHub</a>
-      </div>
-    </header>
-
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-        	<ul> 
-				  {% for post in site.posts %}
-		
-						<li>
-							<small >{{post.date|date_to_string}} * {{post.category}} &nbsp;&nbsp;</small> <a style="font-size:25px;font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;"  href="{{ post.url }}" >{{ post.title }}</a>  
-						</li>				
-				  {% endfor %}
-				  
-				  </ul>
-
-				
-				
-        </section>
-
-        <aside id="sidebar">
-        	 <h3>分类</h3>
-
-						{% for category in site.categories %}
-						<h3><a href="/cat-article?cat={{category | first }}">{{category | first }}</a><small> ({{ category | last | size }})</small></h3>
-						{% endfor %}
-        </aside>
-      </div>
-    </div>
-
-  
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		<script src="js/jquery-2.2.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.backstretch.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="avatar">
+			<div class="pic"></div>
+			<h3>Hi,I am Wayzh!</h3>
+			<small>MAKE A DIFFERENT</small>	
+		</div>
+		<div class="about">
+			<a href="blog.html" class="btn btn-default"><strong>&nbsp;Blog</strong></a>
+			<a href="#" class="btn btn-default"><strong>About</strong></a>
+		</div>
+		<footer>
+			<div class="container">
+				<ul class="social-icons">
+					<li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-google-plus"></a></li>
+					<li><a href="#" class="fa fa-dribbble"></a></li>
+					<li><a href="https://github.com/Wayzh" class="fa fa-github"></a></li>
+				</ul>
+			</div>
+		</footer>
+	</body>
 </html>

@@ -1,0 +1,254 @@
+
+
+html, body {
+  margin:0;border:0;padding:0;
+  font-size:16px;
+  font-family:'Proxima';
+  overflow-x:hidden;
+  position: relative;
+  vertical-align: baseline;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {font-size:40px;}
+h2 {font-size:36px;}
+h3 {font-size:30px;}
+h4 {font-size:24px;}
+h5 {font-size:20px;}
+h6 {font-size:18px;}
+
+
+footer {
+	color: #f9f9f9;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+.avatar{
+  text-align: center;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  padding-top: 120px;
+}
+.avatar .pic{
+	background:url(../img/avatar1.jpg) no-repeat center center;
+	text-align: center;
+	margin: 0 auto; 
+	width: 200px;
+	height: 200px; 
+	-webkit-border-radius: 50em;
+	-moz-border-radius: 50em;
+	border-radius: 50em;
+	background-size:contain;
+	border: 3px solid #fff;
+}
+.avatar h3{
+	margin-bottom: 10px;
+}
+
+.about{
+	text-align: center;
+	overflow: hidden;
+  	position: relative;
+	height: 50px;
+	margin: 0 auto; 
+}
+
+.about-icons li a:hover {
+  background: #202020;
+  color: #fff;
+}
+
+
+.btn{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.btn-default:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.btn.focus, .btn:focus, .btn:hover {
+    color: #333;
+    text-decoration: none;
+}
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+a:active, a:hover {
+    outline: 0;
+}
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    background-color:transparent;
+}
+[role=button] {
+    cursor: pointer;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+
+
+
+
+
+
+/* social icon section */
+.social-icons {
+  padding: 0;
+  margin: 0;
+}
+.social-icons li {
+  display: inline-block;
+  list-style: none;
+}
+.social-icons li a {
+ /* background: #3366CC;*/
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  transition: all 0.4s ease-in;
+  position: relative;
+  bottom: 10px;
+  top: 10px;
+}
+.social-icons li a:hover {
+  background: #202020;
+  color: #fff;
+}
+
+/*-------------blog----------------样式*/
+.panel-cover{
+	width: 28%;
+	height: 100%;
+	max-width: 700px;
+	min-width: 210px;
+	/*display: block;*/
+	position: fixed;
+	z-index: 1000;
+	background: url(../img/tm-bg-slide-3.jpg) top left no-repeat #666666;
+	background-size: cover;
+}
+.panel-cover .pic{
+	width: 150px;
+	height: 150px;
+}
+.panel-min-cover{
+	width: 100%;
+	height: 15%;
+	position: fixed;
+	text-align: center;
+	z-index: 1000;
+	background: url(../img/tm-bg-slide-3.jpg) top left no-repeat #666666;
+	background-size: cover;
+}
+
+.blog-body , .blog-lists{
+	width: 72%;
+	height: 100%;
+	float: right;
+	text-align: center;
+}
+/*----------响应式设计------------------*/
+@font-face {
+    font-family: 'Proxima';
+    src: url(../fonts/ProximaNova-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Proxima Bold';
+    src: url(../fonts/ProximaNova-Bold.otf);
+}
+@media only screen and (min-width: 980px){
+	.panel-min-cover{
+		display: none;
+	}
+}
+@media ( max-width: 980px ) {
+	.avatar {
+		  text-align: center;
+		  height: 240px;
+		  overflow: hidden;
+		  position: relative;
+		  padding-top: 100px;
+	}
+	.avatar .pic{
+		width: 140px;
+		height: 140px; 
+		border: 3px solid #fff;
+	}
+
+}
+@media only screen and (min-width: 360px  ) {
+	.panel-min-cover{
+		display: none;
+	}
+}
+@media ( max-width: 360px ) {
+
+  	.avatar {
+  		100px;
+  	}
+  	.avatar {
+		  text-align: center;
+		  height: 180px;
+		  overflow: hidden;
+		  position: relative;
+		  padding-top: 10px;
+	}
+	.avatar .pic{
+		width: 100px;
+		height:100px;
+		border: 3px solid #fff;
+	}
+	.avatar h3 {
+		font-size: 20px;
+	}
+	.panel-cover{
+		display: none;
+	}
+	.blog-body , .blog-lists{
+		width: 100%;
+		margin-top:  15%;
+		position: fixed;
+	}
+}
