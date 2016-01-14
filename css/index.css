@@ -241,7 +241,7 @@ a {
 	.blog-body , .blog-lists{
 		width: 100%;
 		margin-top:  15%;
-		position: fixed;
+
 	}
 	.blog-body h3, .blog-lists h3{
 		font-size: 17px;
