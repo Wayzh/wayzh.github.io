@@ -335,6 +335,16 @@ a {
 		border: 1px solid #FFFFFF;
 		background-color: transparent;
 	}
+	.panel-min-nav  .btn-nav{
+		 color: #FFFFFF;
+		 width: 120px; 
+		 border: 1px solid #AAAAAA;
+		 
+	}
+	.panel-min-nav  .btn-nav:hover{
+		background-color: transparent;
+		border: 1px solid #FFFFFF;
+	}
 	.panel-cover{
 			width: 100%;
 			height: 200px;
