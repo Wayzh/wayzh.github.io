@@ -232,7 +232,8 @@ a {
 	font-size: 23px;
 }
 .blog-lists{
-	padding-left: 20px;
+	/*padding-left: 20px;*/
+	text-align: center;
 }
 .item{
 	width: 100%;
@@ -245,7 +246,7 @@ a {
 .item .date{
 	float: left;
 	font-size: 12px;
-	margin-top: 14px;
+	margin-top: 13px;
 	border-radius: 30%;
 	color: #AAAAAA;
 }
@@ -316,6 +317,7 @@ a {
 	.blog-body a, .blog-lists a{
 		font-size:17px;
 		font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+		text-align: center;
 	}
 	.panel-min-cover .btn{
 		 border: 0;
@@ -339,8 +341,9 @@ a {
 		display: none;
 	}
 	
-	.item .title{
+	.item{
 		font-size: 17px;
+		text-align: center;
 	}
 	
 }
