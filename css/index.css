@@ -123,7 +123,16 @@ a {
 }
 
 
-
+.about ,.avatar{
+	color:#FFFFFF;
+}
+.about a{
+	color:#FFFFFF;
+}
+.about a:hover{
+	background-color: transparent;
+	color: #F2F8FC;
+}
 
 
 
@@ -164,7 +173,9 @@ a {
 	/*display: block;*/
 	position: fixed;
 	z-index: 1000;
-	background: url(../img/tm-bg-slide-3.jpg) top left no-repeat #666666;
+	background: url(../img/tm-bg-slide-4.jpg) top left no-repeat #666666;
+	opacity:0.9;
+	filter:alpha(opacity=90);
 	background-size: cover;
 }
 .panel-cover .pic{
@@ -173,13 +184,29 @@ a {
 }
 .panel-min-cover{
 	width: 100%;
-	height: 60px;
+	height: 35px;
 	position: fixed;
 	text-align: center;
 	z-index: 1000;
-	background: url(../img/tm-bg-slide-3.jpg) top left no-repeat #666666;
-	background-size: cover;
+  background: rgba(51, 51, 51, 0.98);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+.panel-min-nav{
+	width: 100%;
+	height: 120px;
+	position: fixed;
+	text-align: center;
+	padding-top: 35px;
+	z-index: 900;
+	background-color: rosybrown;
+
+/*background-size: cover;*/
+  background: rgba(51, 51, 51, 0.98);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+   
+}
+
+
 
 .blog-body , .blog-lists{
 	width: 72%;
@@ -224,31 +251,50 @@ a {
 	}
 }
 @media ( max-width: 767px ) {
-  	.avatar {
+  .avatar {
 		  text-align: center;
 		  height: 180px;
 		  overflow: hidden;
 		  position: relative;
-		  padding-top: 100px;
+		  padding-top: 30px;
 	}
 	.avatar .pic{
-		width: 100px;
-		height:100px;
+		width: 80px;
+		height:80px;
 		border: 3px solid #fff;
 	}
 	.avatar h3 {
-		font-size: 20px;
-	}
-	.panel-cover{
-		display: none;
+		font-size: 17px;
 	}
 	.blog-body , .blog-lists{
 		width: 100%;
 		margin-top:  15%;
+		float: left;
 
 	}
 	.blog-body a, .blog-lists a{
 		font-size:17px;
 		font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
 	}
+	.panel-min-cover .btn{
+		 border: 0;
+	}
+	.panel-min-cover .btn:hover{
+		border: 1px solid #FFFFFF;
+		background-color: transparent;
+	}
+	.panel-cover{
+			width: 100%;
+			height: 200px; 
+			float: left;
+			z-index: 800;
+			margin-top: 35px;
+			background: url(../img/tm-bg-slide-4.jpg) top left no-repeat #666666;
+			background-size: cover;
+			filter:alpha(opacity=80);-moz-opacity:0.8;		
+	}
+	.panel-cover .about,.panel-cover footer{
+		display: none;
+	}
+	
 }
