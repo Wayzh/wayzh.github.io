@@ -308,6 +308,10 @@ a {
 		height:80px;
 		border: 1px solid #fff;
 	}
+	.blog-body{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 	.blog-body h3 , .blog-lists h3 {
 		font-size: 18px;
 	}
@@ -315,7 +319,6 @@ a {
 		width: 100%;
 		margin-top:  10px;
 		float: left;
-
 	}
 	.blog-body a, .blog-lists a{
 		font-size:17px;
