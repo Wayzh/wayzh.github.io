@@ -20,41 +20,41 @@
 		</div>
 		<div class="panel-min-nav">test</div>
 		<div class="panel-cover">
-		<header >
-			<div class="avatar">
-			<div class="pic"></div>
-			<h3>Wayzh</h3>
-			<small>MAKE A DIFFERENCE</small>
-			</div>
-			<div class="about">
-				<a href="blog.html" class="btn btn-default"><strong>&nbsp;Blog</strong></a>
-				<a href="#" class="btn btn-default"><strong>About</strong></a>
-			</div>
+			<header >
+				<div class="avatar">
+				<div class="pic"></div>
+				<h3>Wayzh</h3>
+				<small>MAKE A DIFFERENCE</small>
+				</div>
+				<div class="about">
+					<a href="blog.html" class="btn btn-default"><strong>&nbsp;Blog</strong></a>
+					<a href="#" class="btn btn-default"><strong>About</strong></a>
+				</div>
+	
+			</header>
+			<footer>
+				<div class="container">
+					<ul class="social-icons">
+						<li><a href="#" class="fa fa-facebook"></a></li>
+	                    <li><a href="#" class="fa fa-google-plus"></a></li>
+						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="https://github.com/Wayzh" class="fa fa-github"></a></li>
+					</ul>
+				</div>
+			</footer>
+		</div>
 
-		</header>
-		<footer>
-			<div class="container">
-				<ul class="social-icons">
-					<li><a href="#" class="fa fa-facebook"></a></li>
-                    <li><a href="#" class="fa fa-google-plus"></a></li>
-					<li><a href="#" class="fa fa-dribbble"></a></li>
-					<li><a href="https://github.com/Wayzh" class="fa fa-github"></a></li>
-				</ul>
-			</div>
-		</footer>
-	</div>
-
-	<div class="blog-lists" >
-    	<ul> 
-		  {% for post in site.posts %}
-
-				<li>
-					<small >{{post.date|date_to_string}} * {{post.category}} &nbsp;&nbsp;</small> <a  href="{{ post.url }}" >{{ post.title }}</a>
-				</li>				
-		  {% endfor %}
-		  
-		  </ul>
-
-	</div>
+		<div class="blog-lists" >
+	    	<ul> 
+			  {% for post in site.posts %}
+	
+					<li>
+						<small >{{post.date|date_to_string}} * {{post.category}} &nbsp;&nbsp;</small> <a  href="{{ post.url }}" >{{ post.title }}</a>
+					</li>				
+			  {% endfor %}
+			  
+			  </ul>
+	
+		</div>
 	</body>
 </html>

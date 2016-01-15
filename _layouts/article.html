@@ -14,37 +14,38 @@
 		<script src="/js/blog.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
+		<div class="panel-min-cover">
+			<a class="btn btn-default fa fa-align-justify" style="color:#fff;"></a>
+		</div>
 		<div class="panel-cover">
-		<header >
-			<div class="avatar">
-			<div class="pic"></div>
-			<h3>Hi,I am Wayzh!</h3>
-			<small>MAKE A DIFFERENCE</small>
-			</div>
-			<div class="about">
-				<a href="/blog.html" class="btn btn-default"><strong>&nbsp;Blog</strong></a>
-				<a href="#" class="btn btn-default"><strong>About</strong></a>
-			</div>
+			<header >
+				<div class="avatar">
+				<div class="pic"></div>
+				<h3>Wayzh</h3>
+				<small>MAKE A DIFFERENCE</small>
+				</div>
+				<div class="about">
+					<a href="/blog.html" class="btn btn-default"><strong>&nbsp;Blog</strong></a>
+					<a href="#" class="btn btn-default"><strong>About</strong></a>
+				</div>
+	
+			</header>
+			<footer>
+				<div class="container">
+					<ul class="social-icons">
+						<li><a href="#" class="fa fa-facebook"></a></li>
+	                    <li><a href="#" class="fa fa-google-plus"></a></li>
+						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="https://github.com/Wayzh" class="fa fa-github"></a></li>
+					</ul>
+				</div>
+			</footer>
+		</div>
 
-		</header>
-		<footer>
-			<div class="container">
-				<ul class="social-icons">
-					<li><a href="#" class="fa fa-facebook"></a></li>
-                    <li><a href="#" class="fa fa-google-plus"></a></li>
-					<li><a href="#" class="fa fa-dribbble"></a></li>
-					<li><a href="https://github.com/Wayzh" class="fa fa-github"></a></li>
-				</ul>
-			</div>
-		</footer>
-	</div>
-	<div class="panel-min-cover">
-		<a class="btn btn-default fa fa-align-justify" style="color:#fff;"></a>
-	</div>
-	<div class="blog-body">
-			<h3>{{page.title}}</h3>
-			{{content}}
-
-	</div>
+		<div class="blog-body">
+				<h3>{{page.title}}</h3>
+				{{content}}
+	
+		</div>
 	</body>
 </html>
