@@ -9,6 +9,8 @@ html, body {
   vertical-align: baseline;
 }
 
+
+
 html {
     -webkit-font-smoothing: antialiased;
 }
@@ -169,7 +171,6 @@ a {
 .panel-cover{
 	width: 28%;
 	height: 100%;
-	max-width: 700px;
 	/*display: block;*/
 	position: fixed;
 	z-index: 1000;
@@ -268,7 +269,7 @@ a {
 	}
 	.blog-body , .blog-lists{
 		width: 100%;
-		margin-top:  15%;
+		margin-top:  250px;
 		float: left;
 
 	}
