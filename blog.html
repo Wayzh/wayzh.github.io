@@ -45,16 +45,17 @@
 		</div>
 
 		<div class="blog-lists" >
-	    	<ul> 
-			  {% for post in site.posts %}
-	
-					<li>
-						<small >{{post.date|date_to_string}} * {{post.category}} &nbsp;&nbsp;</small> <a  href="{{ post.url }}" >{{ post.title }}</a>
-					</li>				
-			  {% endfor %}
-			  
-			  </ul>
-	
+			 {% for post in site.posts %}
+			<div  class="item">
+				<div class="title">
+					<h3><i class="fa fa-tumblr-square"> <a href="{{post.url}}"> {{ post.title }}</a></i></h3>
+				</div>
+				<div class="date">
+					{{post.date|date_to_string}} 于
+				</div>
+				<div class="catagory"> {{post.category}}</div>
+			</div>
+			 {% endfor %}
 		</div>
 	</body>
 </html>

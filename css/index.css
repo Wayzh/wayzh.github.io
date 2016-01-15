@@ -219,9 +219,44 @@ a {
 	margin-right: 4px;
 }
 .blog-body a, .blog-lists a{
+	color: #000000;
 	font-size:23px;
 	font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
 }
+.blog-body a:hover, .blog-lists a:hover{
+	color: #2E7BCF;
+	text-decoration:none
+}
+.blog-body h3 , .blog-lists h3 {
+	margin:7px;
+	font-size: 23px;
+}
+.blog-lists{
+	padding-left: 20px;
+}
+.item{
+	width: 100%;
+	float: left;
+	vertical-align: baseline;
+}
+.title{
+	float: left;
+}
+.item .date{
+	float: left;
+	font-size: 12px;
+	margin-top: 14px;
+	border-radius: 30%;
+	color: #AAAAAA;
+}
+.item .catagory{
+	float: left;
+	font-size: 13px;
+	margin-top: 14px;
+	border-radius: 30%;
+	color: #666666;
+}
+
 /*----------响应式设计------------------*/
 @font-face {
     font-family: 'Proxima';
@@ -269,7 +304,7 @@ a {
 		height:80px;
 		border: 1px solid #fff;
 	}
-	.blog-body h3 {
+	.blog-body h3 , .blog-lists h3 {
 		font-size: 18px;
 	}
 	.blog-body , .blog-lists{
@@ -302,6 +337,10 @@ a {
 	}
 	.panel-cover .about,.panel-cover footer{
 		display: none;
+	}
+	
+	.item .title{
+		font-size: 17px;
 	}
 	
 }
