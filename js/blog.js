@@ -29,18 +29,19 @@ $(function(){
     		});
     	});
     	$(".panel-min-nav").on("click",".btn-nav",function(){
-    		console.log(this.value);
+    		var cat = $(this).text();
     		$.ajax({
 	    			type:"get",
 	    			url:"posts.json",
 	    			async:true,
 	    			dataType:"json",
 	    			success:function(data){
+	    				console.log("test");
 	    				var length = data.length - 1;
-	    				$(".blog-body").html();
-	    				$(".blog-lists").html();
+	    				$(".blog-body").html("");
+	    				$(".blog-lists").html("");
 	    				for(var i = 0 ; i < length ; i++){
-	    					if(data[i].toUpperCase() == $("#get-catagory").val().toUpperCase() ){
+	    					if(data[i] == cat.toUpperCase() ){
 	    						var child = "<div  class='item'><div class='title'>" 
 							    	+"<h3><i class='fa fa-tumblr-square'> <a href='"+data[i].url+"'>"+data[i].title
 							    	+"</a></i></h3></div>"
