@@ -239,9 +239,12 @@ a {
 	width: 100%;
 	float: left;
 	vertical-align: baseline;
+	margin-top: 6px;
 }
 .title{
 	float: left;
+	border-bottom: 1px solid #CCCCCC;
+	border-radius: 30%;
 }
 .item .date{
 	float: left;
