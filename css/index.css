@@ -173,7 +173,7 @@ a {
 	/*display: block;*/
 	position: fixed;
 	z-index: 1000;
-	background: url(../img/tm-bg-slide-4.jpg) top left no-repeat #666666;
+	background: url(../img/tm-bg-slide-2.jpg) top left no-repeat #666666;
 	opacity:0.9;
 	filter:alpha(opacity=90);
 	background-size: cover;
@@ -289,7 +289,7 @@ a {
 			float: left;
 			z-index: 800;
 			margin-top: 35px;
-			background: url(../img/tm-bg-slide-4.jpg) top left no-repeat #666666;
+			background: url(../img/tm-bg-slide-2.jpg) top left no-repeat #666666;
 			background-size: cover;
 			filter:alpha(opacity=80);-moz-opacity:0.8;		
 	}
