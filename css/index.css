@@ -210,11 +210,13 @@ a {
 
 
 .blog-body , .blog-lists{
-	width: 72%;
+	width: 70%;
 	height: 100%;
 	float: right;
-	text-align: center;
+	text-align: left;
 	margin-top: 60px;
+	margin-left: 4px;
+	margin-right: 4px;
 }
 .blog-body a, .blog-lists a{
 	font-size:23px;
