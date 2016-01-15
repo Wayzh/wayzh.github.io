@@ -316,9 +316,12 @@ a {
 		font-size: 18px;
 	}
 	.blog-body , .blog-lists{
-		width: 90%;
+		width: 100%;
 		margin-top:  10px;
 		float: left;
+	}
+	.blog-body{
+		width: 90%;
 	}
 	.blog-body a, .blog-lists a{
 		font-size:17px;
