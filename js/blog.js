@@ -11,6 +11,7 @@ $(function(){
 	
     	$(".panel-min-nav").hide();
     	$("#min-nav").click(function(){
+    		$(".panel-min-nav").html("");
     		$(".panel-min-nav").slideToggle(400);
     		$.ajax({
     			type:"get",
