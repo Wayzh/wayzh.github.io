@@ -42,14 +42,15 @@ $(function(){
 	    				$(".blog-body").html("");
 	    				$(".blog-lists").html("");
 	    				for(var i = 0 ; i < length ; i++){
-	    					if(data[i] == cat.toUpperCase() ){
+	    					console.log(data[i]);
+	    					if(data[i].category.toUpperCase() == cat.toUpperCase() ){
 	    						var child = "<div  class='item'><div class='title'>" 
 							    	+"<h3><i class='fa fa-tumblr-square'> <a href='"+data[i].url+"'>"+data[i].title
 							    	+"</a></i></h3></div>"
 									+"<div class='date'>"
 									+ data[i].date 
 									+" 于 </div>"
-							    	+"<div class='catagory'>"+data[i].category+"</div></div>"
+							    	+"<div class='category'>"+data[i].category+"</div></div>"
 								$(".blog-body").append(child);
 	    						$(".blog-lists").append(child);
 	    					}
