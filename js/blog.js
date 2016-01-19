@@ -11,23 +11,7 @@ $(function(){
 	
     	$(".panel-min-nav").hide();
     	$("#min-nav").click(function(){
-    		$(".panel-min-nav").html("");
     		$(".panel-min-nav").slideToggle(400);
-    		$.ajax({
-    			type:"get",
-    			url:"catagory.json",
-    			async:true,
-    			dataType:"json",
-    			success:function(data){
-
-    				var length = data.length-1;
-    				for(var i = 0 ;  i < length;i++){
-    					var cat = "<div><a class='btn btn-default btn-nav'>"+data[i]+"<a></div>";
-    					$(".panel-min-nav").append(cat);
-    				}
-    				
-    			}
-    		});
     	});
     	$(".panel-min-nav").on("click",".btn-nav",function(){
     		var cat = $(this).text();
