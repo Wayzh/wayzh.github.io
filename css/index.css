@@ -231,6 +231,17 @@ a {
 	margin:7px;
 	font-size: 23px;
 }
+.blog-body pre{
+	margin:0; 
+	padding:1em; 
+	background:#F9F9F9; 
+	border:1px dashed #2F6FAB; 
+	display:block; 
+	font-family:"Courier New", Courier, monospace; 
+	color:#666; 
+	line-height:0.8; 
+	overflow:auto;
+}
 .blog-lists{
 	/*padding-left: 20px;*/
 	text-align: center;
