@@ -9,6 +9,7 @@ tags: [js,web前端,scoping]
 发现毫无反应。
 比如：
 </p>
+<code>
 <pre>
 var data = ["web前端","Java后台"]
 var length = data.length-1;
@@ -16,10 +17,11 @@ for(var i = 0 ;  i < length;i++){
 	var cat = "<div><a class='btn btn-default btn-nav'>"+data[i]+"<a></div>";
 	$(".panel-min-nav").append(cat);
 }
-$('.btn-nav').click(function(){
+$(".btn-nav").click(function(){
 	console.log("test");//当点击上面动态添加的元素时，是无反应的
 });
 </pre>
+</code>
 <p>修正：</p>
 <pre>
 $(".panel-min-nav").on("click",".btn-nav",function(){
