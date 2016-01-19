@@ -9,8 +9,17 @@ $(function(){
 //				"http://wayzh.github.io/img/tm-bg-slide-3.jpg"
 //		], 	{duration: 3200, fade: 1300});
 	
+    	$(".panel-min-nav").hide();
+    	var done = false;
     	$("#min-nav").click(function(){
     		$(".panel-min-nav").slideToggle(400);
+    		var cat = "<div><a class='btn btn-default btn-nav'>WEB前端</a></div>"
+    				+ "<div><a class='btn btn-default btn-nav'>JAVA后台</a></div>"
+    				+"<div><a class='btn btn-default btn-nav'>个人杂记</a></div>";
+    		if(done == false){
+    			$(".panel-min-nav").append(cat);
+    			done = true;
+    		}
     	});
     	$(".panel-min-nav").on("click",".btn-nav",function(){
     		var cat = $(this).text();
