@@ -231,7 +231,7 @@ a {
 	margin:7px;
 	font-size: 23px;
 }
-.blog-body pre{
+.blog-body pre,.blog-body xmp{
 	margin:0; 
 	padding:1em; 
 	background:#F9F9F9; 
